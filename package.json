@@ -1,0 +1,31 @@
+{
+  "name": "@flynns-devstation/prettier-config",
+  "version": "1.0.0-alpha.0",
+  "description": "Shareable config for prettier",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write '**/*.{js,md}'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlynnsDevstation/prettier-config.git"
+  },
+  "keywords": [
+    "prettier"
+  ],
+  "author": {
+    "name": "Chris Helgert",
+    "email": "chris@flynnsdevstation.de"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FlynnsDevstation/prettier-config/issues"
+  },
+  "homepage": "https://github.com/FlynnsDevstation/prettier-config#readme",
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
+  "peerDependencies": {
+    "prettier": "^1.16.4"
+  }
+}
