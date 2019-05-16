@@ -23,9 +23,20 @@
   },
   "homepage": "https://github.com/FlynnsDevstation/prettier-config#readme",
   "devDependencies": {
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
     "prettier": "^1.16.4"
   },
   "peerDependencies": {
     "prettier": "^1.16.4"
+  },
+  "husky": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*{js,json,md,ts}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
