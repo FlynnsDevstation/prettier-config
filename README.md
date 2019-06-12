@@ -1,6 +1,7 @@
 # prettier-config
 
 [![npm](https://img.shields.io/npm/v/@flynns-devstation/prettier-config.svg?style=for-the-badge)](https://www.npmjs.com/package/@flynns-devstation/prettier-config)
+[![CircleCI](https://img.shields.io/circleci/build/github/FlynnsDevstation/prettier-config/master.svg?style=for-the-badge)](https://circleci.com/gh/FlynnsDevstation/prettier-config)
 
 This package provides Flynns Devstation's .prettierrc as an extensible shared config.
 
@@ -38,7 +39,7 @@ module.exports = config
 ```json
 {
   "scripts": {
-    "format": "prettier --write '**/*.{js,ts,md}'" 
+    "format": "prettier --write '**/*.{js,ts,md}'"
   }
 }
 ```

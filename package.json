@@ -4,7 +4,8 @@
   "description": "Shareable config for prettier",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write '**/*.{js,md}'"
+    "format": "prettier --write '**/*.{js,md}'",
+    "lint": "prettier --check '**/*.{js,md}'"
   },
   "repository": {
     "type": "git",
