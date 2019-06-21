@@ -1,7 +1,7 @@
 # prettier-config
 
 [![npm](https://img.shields.io/npm/v/@flynns-devstation/prettier-config.svg?style=for-the-badge)](https://www.npmjs.com/package/@flynns-devstation/prettier-config)
-[![CircleCI](https://img.shields.io/circleci/build/github/FlynnsDevstation/prettier-config/master.svg?style=for-the-badge)](https://circleci.com/gh/FlynnsDevstation/prettier-config) [![Greenkeeper badge](https://badges.greenkeeper.io/FlynnsDevstation/prettier-config.svg)](https://greenkeeper.io/)
+[![CircleCI](https://img.shields.io/circleci/build/github/FlynnsDevstation/prettier-config/master.svg?style=for-the-badge)](https://circleci.com/gh/FlynnsDevstation/prettier-config)
 
 This package provides Flynns Devstation's .prettierrc as an extensible shared config.
 
