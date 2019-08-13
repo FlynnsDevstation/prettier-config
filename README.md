@@ -13,6 +13,8 @@ This package provides Flynns Devstation's .prettierrc as an extensible shared co
 
 ## Usage
 
+### As npm script
+
 1. Install config and peerDependencies
 
 ```bash
@@ -45,6 +47,38 @@ module.exports = config
 ```
 
 4. Run `npm run format` or `yarn format` to prettier your `JavaScript`, `TypeScript` and `Markdown` files
+
+### As commit hook
+
+1. Install config, peerDependencies and devDependencies for commit hook
+
+```bash
+yarn add -D @wcc/prettier-config prettier husky lint-staged
+```
+
+2. Create prettier config
+```js
+// .prettierrc.js
+module.exports = require('@wcc/prettier-config')
+```
+
+3. Create commit hook in `package.json`
+
+```json
+{
+  "husky": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*{gql,js,jsx,json,md,ts,tsx,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
+```
+
+4. Now on every commit the files will be automatically beatified with `prettier`
 
 ## Contributing
 
