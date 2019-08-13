@@ -53,13 +53,13 @@ module.exports = config
 1. Install config, peerDependencies and devDependencies for commit hook
 
 ```bash
-yarn add -D @wcc/prettier-config prettier husky lint-staged
+yarn add -D @flynns-devstation/prettier-config prettier husky lint-staged
 ```
 
 2. Create prettier config
 ```js
 // .prettierrc.js
-module.exports = require('@wcc/prettier-config')
+module.exports = require('@flynns-devstation/prettier-config')
 ```
 
 3. Create commit hook in `package.json`
