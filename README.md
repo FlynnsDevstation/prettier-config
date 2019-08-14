@@ -57,6 +57,7 @@ yarn add -D @flynns-devstation/prettier-config prettier husky lint-staged
 ```
 
 2. Create prettier config
+
 ```js
 // .prettierrc.js
 module.exports = require('@flynns-devstation/prettier-config')
@@ -70,10 +71,7 @@ module.exports = require('@flynns-devstation/prettier-config')
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "*{gql,js,jsx,json,md,ts,tsx,yml}": [
-      "prettier --write",
-      "git add"
-    ]
+    "*{gql,js,jsx,json,md,ts,tsx,yml}": ["prettier --write", "git add"]
   }
 }
 ```
