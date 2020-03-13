@@ -7,14 +7,14 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-         key: dependency-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+         key: dependency-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
       - run:
          name: install-dependency
-         command: npm install
+         command: yarn --frozen-lockfile
       - save_cache:
-         key: dependency-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+         key: dependency-cache-{{ .Branch }}-{{ checksum "yarn.lock" }}
          paths:
            - ./node_modules
       - run:
          name: lint
-         command: npm run lint
+         command: yarn lint
