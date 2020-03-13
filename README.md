@@ -31,9 +31,7 @@ yarn add -D @flynns-devstation/prettier-config prettier
 
 ```js
 // .prettierrc.js
-const config = require('@flynns-devstation/prettier-config')
-
-module.exports = config
+module.exports = require('@flynns-devstation/prettier-config')
 ```
 
 3. Create a `format` job in your package.json
@@ -63,15 +61,17 @@ yarn add -D @flynns-devstation/prettier-config prettier husky lint-staged
 module.exports = require('@flynns-devstation/prettier-config')
 ```
 
-3. Create commit hook in `package.json`
+3. Create the commit hook in `package.json`
 
 ```json
 {
   "husky": {
-    "pre-commit": "lint-staged"
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "lint-staged": {
-    "*{gql,js,jsx,json,md,ts,tsx,yml}": ["prettier --write", "git add"]
+    "*{gql,js,jsx,json,md,ts,tsx,yml}": "prettier --write"
   }
 }
 ```
