@@ -26,10 +26,10 @@
   "devDependencies": {
     "husky": "^4.2.1",
     "lint-staged": "^10.0.7",
-    "prettier": "^1.16.4"
+    "prettier": "^2.3.0"
   },
   "peerDependencies": {
-    "prettier": "^1.16.4"
+    "prettier": "^2.3.0"
   },
   "husky": {
     "pre-commit": "lint-staged"
